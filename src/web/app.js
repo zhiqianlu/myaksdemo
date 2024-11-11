@@ -13,7 +13,7 @@ var favicon = require("serve-favicon");
 var passport = require("./config/passport.config");
 var i18n = require("i18n");
 const promBundle = require("express-prom-bundle");
-const metricsMiddleware = promBundle({includeMethod: false, includePath: false});
+const metricsMiddleware = promBundle({includeMethod: false, includePath: false, includeCode: false});
 
 var app = express();
 
